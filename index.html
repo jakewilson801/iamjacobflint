@@ -1,73 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script async
-  src="https://js.stripe.com/v3/buy-button.js">
-  </script>
+  <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jacob Flint Creative Coaching</title>
+
+  <!-- Page title -->
+  <title>Jacob Flint Music Services</title>
+
+  <!-- Emoji favicon (gold record) -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💿</text></svg>"
+  />
+
   <style>
-    body { font-family: Arial, sans-serif; background: #fff; color: #000; padding: 2rem; max-width: 700px; margin: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #000;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+    }
     h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
     h2 { font-size: 1.5rem; margin-top: 2rem; }
     p { line-height: 1.6; }
     ul { line-height: 1.8; }
-    .pricing { font-size: 1.25rem; font-weight: bold; margin-top: 1rem; }
-    .button {
-      display: inline-block;
-      margin-top: 1.5rem;
-      padding: 0.75rem 1.5rem;
-      background: #000;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 5px;
-    }
-     img.avatar {
+
+    img.avatar {
       width: 100px;
       height: 100px;
       border-radius: 50%;
       object-fit: cover;
       border: 2px solid black;
     }
+
     .container {
-      text-align: center;    
+      text-align: center;
       width: 100%;
     }
+
     .offer {
-      text-align: left;    
+      text-align: left;
     }
   </style>
 </head>
+
 <body>
-<div class="container">
-  <img src="https://djguide.iamjacobflint.com/assets/avatar.jpg" alt="Avatar" class="avatar" />
+  <div class="container">
+    <img src="https://djguide.iamjacobflint.com/assets/avatar.jpg" alt="Avatar" class="avatar" />
 
-  <h1>Finish My Track</h1>
-  <p>A done-for-you music production service by <b>Jacob Flint</b> for artists who want release-ready records without the overwhelm.</p>
+    <h1>Finish My Track</h1>
+    <p>
+      A done-for-you music production service by <b>Jacob Flint</b> for artists
+      who want release-ready records without the overwhelm.
+    </p>
 
-  <h2>What’s Included</h2>
+    <h2>What’s Included</h2>
 
-  <div class="offer">
-    <ul>
-      <li>🎧 &nbsp; <strong>Track Evaluation</strong> I review your idea and identify exactly what’s needed to finish it professionally.</li>
+    <div class="offer">
+      <ul>
+        <li>🎧 <strong>Track Evaluation</strong> — I review your idea and identify exactly what’s needed to finish it professionally.</li>
+        <li>🥁 <strong>Full Arrangement & Production</strong> — Your loop or demo becomes a complete, structured track.</li>
+        <li>🎚️ <strong>Professional Mixdown</strong> — Clean low end, balanced energy, club-ready translation.</li>
+        <li>📦 <strong>Release-Ready Export</strong> — Final WAV delivered for labels, DJs, or self-release.</li>
+        <li>🔁 <strong>One Focused Revision</strong> — A refinement pass to dial it in.</li>
+      </ul>
+    </div>
 
-      <li>🥁 &nbsp; <strong>Full Arrangement & Production</strong> Your loop or demo is turned into a complete, structured track with drums, bass, and groove.</li>
+    <h2>Pricing</h2>
 
-      <li>🎚️ &nbsp; <strong>Professional Mixdown</strong> Clean low end, balanced energy, and clarity that translates to clubs and headphones.</li>
-
-      <li>📦 &nbsp; <strong>Release-Ready Export</strong> Final WAV delivered, ready for labels, DJs, or self-release.</li>
-
-      <li>🔁 &nbsp; <strong>One Focused Revision</strong> A refinement pass to make sure the track feels right.</li>
-    </ul>
+    <stripe-buy-button
+      buy-button-id="buy_btn_1SdMsPLq91jx9MXbJFUkrB9x"
+      publishable-key="pk_live_51OWTvxLq91jx9MXb9Vk3wfdeAEc0ohSAEDi9Jr3QmAd2l1qSF6iCsCOPKwvk0dyidXBKbz1vnVaOWu3yWMJoKeFj00LPAwpUVV">
+    </stripe-buy-button>
   </div>
-</div>
-  <h2>Pricing</h2>
-<stripe-buy-button
-  buy-button-id="buy_btn_1SdMsPLq91jx9MXbJFUkrB9x"
-  publishable-key="pk_live_51OWTvxLq91jx9MXb9Vk3wfdeAEc0ohSAEDi9Jr3QmAd2l1qSF6iCsCOPKwvk0dyidXBKbz1vnVaOWu3yWMJoKeFj00LPAwpUVV"
->
-</stripe-buy-button>
- </div>
 </body>
 </html>
